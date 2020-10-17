@@ -1,0 +1,19 @@
+{
+  "name": "JavaScript",
+  "version": "1.0.0",
+  "main": "LCA.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "type": "module",
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.12.1",
+    "@babel/preset-env": "^7.12.1",
+    "babel-jest": "^26.5.2",
+    "jest": "^26.5.3"
+  }
+}
