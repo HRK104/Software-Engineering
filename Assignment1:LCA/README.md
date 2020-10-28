@@ -12,6 +12,8 @@ The first language is Java which I have an experience to use it.
 The second one is JavaScript which I haven't used seriously
 
 #Result
+
+
 JavaScript:
 suzukimiyuki@suzukimiyukinoMacBook-Pro JavaScript % npm test
 
