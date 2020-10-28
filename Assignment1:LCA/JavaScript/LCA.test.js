@@ -54,8 +54,8 @@ test('test LCA ver1', () => {
             // if the data is less than the node 
             // data move left of the tree 
 
-            console.log("node.data: " + node.data);
-            if ((node.prev) != null) console.log("node.prev: " + (node.prev).data);
+            //console.log("node.data: " + node.data);
+            //if ((node.prev) != null) console.log("node.prev: " + (node.prev).data);
 
             if (newNode.data < node.data) {
                 // if left is null insert node here 
@@ -155,7 +155,7 @@ test('test LCA ver1', () => {
         inorder(node) {
             if (node !== null) {
                 this.inorder(node.left);
-                console.log(node.data);
+                //console.log(node.data);
                 this.inorder(node.right);
             }
         }
@@ -163,7 +163,7 @@ test('test LCA ver1', () => {
         // Performs preorder traversal of a tree     
         preorder(node) {
             if (node !== null) {
-                console.log(node.data);
+                //console.log(node.data);
                 this.preorder(node.left);
                 this.preorder(node.right);
             }
@@ -174,7 +174,7 @@ test('test LCA ver1', () => {
             if (node !== null) {
                 this.postorder(node.left);
                 this.postorder(node.right);
-                console.log(node.data);
+                //console.log(node.data);
             }
         }
 
@@ -321,16 +321,18 @@ test('test LCA ver1', () => {
     // var result = BST.findLCA(5,9);
     // console.log("BST.findLCA(5,9): "+result.data);
 
-    // result = BST.findLCA(13,22);
-    // console.log("BST.findLCA(13,22): "+result.data);
-    // result = BST.findLCA(7,9);
-    // console.log("BST.findLCA(7,9): "+result.data);
-
-    var result = BST.findLCA(5, 9);
+    var result = BST.findLCA(13,22);
+    //console.log("BST.findLCA(13,22): "+result.data);
+    expect(result.data).toBe(15);
+    result = BST.findLCA(7,9);
+    //console.log("BST.findLCA(7,9): "+result.data);
     expect(result.data).toBe(7);
-    // result = BST.findLCA(13,22);
-    // expect(result.data).toBe(15);
-    // result = BST.findLCA(7,9);
-    // expect(result.data).toBe(7);
+
+    result = BST.findLCA(5, 9);
+    expect(result.data).toBe(7);
+    result = BST.findLCA(13,22);
+    expect(result.data).toBe(15);
+    result = BST.findLCA(7,9);
+    expect(result.data).toBe(7);
 })
 
