@@ -29,6 +29,10 @@ Snapshots:   0 total
 Time:        1.428 s
 Ran all test suites.
 
+The screenshot is in /Software-Engineering/Assignment1:LCA/JavaScript/Screenshot_result_JavaScript.png
+
+
+
 
 Java:
-The screenshot of the result of runnning program is in /Software-Engineering/Assignment1:LCA/Java/Screenshot_result.png
+The screenshot of the result of runnning program is in /Software-Engineering/Assignment1:LCA/Java/Screenshot_result_Java.png
