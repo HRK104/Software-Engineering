@@ -41,11 +41,10 @@ public class DAG {
             else lca.add(findLCA(root,a,b.parents.get(0)));
         }
 
-
-		for (int i = 0; i < lca.size(); i++) {
-			if (lca.get(i).data > lca.get(0).data) maxTemp = lca.get(i);
-		}
-		return maxTemp;
+	for (int i = 0; i < lca.size(); i++) {
+		if (lca.get(i).data > lca.get(0).data) maxTemp = lca.get(i);
+	}
+	return maxTemp;
 
 
 
