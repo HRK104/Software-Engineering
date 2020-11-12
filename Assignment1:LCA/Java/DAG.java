@@ -23,7 +23,7 @@ public class DAG {
 	public  static DAGNode findLCA(DAGNode root, DAGNode a, DAGNode b){
         if (root==null) return null;
         if (root == a ||root == b) return root;
-        if(a.data==b.data)        return a;
+        if(a.data==b.data)	return a;
 
         ArrayList <DAGNode> lca = new ArrayList<DAGNode>();
         if(a.parents.size()==0||b.parents.size()==0) return null;
@@ -42,12 +42,10 @@ public class DAG {
         }
 
 
-            DAGNode maxTemp = lca.get(0);
-
-            for (int i = 0; i < lca.size(); i++) {
-                if (lca.get(i).data > maxTemp.data) maxTemp = lca.get(i);
-            }
-            return maxTemp;
+		for (int i = 0; i < lca.size(); i++) {
+			if (lca.get(i).data > lca.get(0).data) maxTemp = lca.get(i);
+		}
+		return maxTemp;
 
 
 
